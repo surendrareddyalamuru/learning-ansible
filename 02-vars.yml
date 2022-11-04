@@ -47,9 +47,9 @@
   tasks:
     - name: Get Uptime
       ansible.builtin.shell: uptime
-      Rigister: out
+      register: out
 
     - name: Print out register
       ansible.builtin.debug:
-        msg: URL = {{ out }}
+        msg: "{{ out }}"
 
