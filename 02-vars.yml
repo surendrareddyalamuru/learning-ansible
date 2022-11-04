@@ -47,7 +47,7 @@
   tasks:
     - name: Get Uptime
       ansible.builtin.shell: uptime
-        Rigister: out
+      Rigister: out
 
     - name: Print out register
       ansible.builtin.debug:
