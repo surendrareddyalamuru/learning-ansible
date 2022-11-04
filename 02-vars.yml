@@ -40,3 +40,16 @@
     - name: Print URL
       ansible.builtin.debug:
         msg: URL = {{ ansible_hostname }}
+
+
+- name: Register a variable example
+  hosts: all
+  tasks:
+    - name: Get Uptime
+      ansible.builtin.shell: uptime
+        Rigister: out
+
+    - name: Print out register
+      ansible.builtin.debug:
+        msg: URL = {{ out }}
+
